@@ -8,6 +8,10 @@
 @import "partials/nav";
 @import "partials/footer";
 
+body {
+  background-color: #f1f1f1;
+}
+
 .banner {
   background-image: url("../images/volkshuis.jpg");
   background-repeat: no-repeat;
