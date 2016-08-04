@@ -4,3 +4,23 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
+
+@import "partials/nav";
+@import "partials/footer";
+
+.banner {
+  background-image: url("../images/volkshuis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 475px;
+
+}
+
+.content {
+  section {
+    @include span-columns(4 of 12);
+  }
+}
+
+
