@@ -1,4 +1,4 @@
-div.projects {
+div.projects, div.project {
   margin-bottom: 3.365em;
   header {
     margin-top: 5.063em;
@@ -6,6 +6,23 @@ div.projects {
   }
   h1 {
     font-size: 2.25em;
+  }
+}
+
+div.project {
+  .content {
+    @include span-columns(8);
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      li {
+        margin-bottom: 2.25em;
+      }
+    }
+  }
+
+  div.sub {
+    margin-bottom: 3.365em;
   }
 }
 ul.countries {
