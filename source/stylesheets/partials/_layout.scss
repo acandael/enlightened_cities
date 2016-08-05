@@ -3,6 +3,17 @@ body {
   background-color: #f1f1f1;
 }
 
+p {
+  color: lighten($medium-gray, 20);
+
+  &.more {
+    color: $medium-gray;
+    a {
+      border-bottom: 2px solid $medium-gray;
+    }
+  }
+}
+
 
 a {
   color: inherit;
