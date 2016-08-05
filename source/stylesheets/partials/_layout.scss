@@ -6,15 +6,18 @@ body {
 p {
   color: lighten($medium-gray, 20);
 
-  &.more {
-    color: $medium-gray;
-    a {
-      border-bottom: 2px solid $medium-gray;
-    }
-  }
 }
 
 
 a {
   color: inherit;
+}
+
+.more {
+  color: $medium-gray;
+  a {
+      border-bottom: 3px solid $medium-gray;
+      padding-bottom: .296em;
+      border-color: lighten($medium-gray, 30);
+    }
 }
