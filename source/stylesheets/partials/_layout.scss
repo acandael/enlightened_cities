@@ -1,0 +1,9 @@
+body {
+  @include outer-container;
+  background-color: #f1f1f1;
+}
+
+
+a {
+  color: inherit;
+}

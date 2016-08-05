@@ -16,6 +16,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="wrapper-for-content-outside-of-footer">
+      <%= partial "partials/nav" %>
+      <%= yield %>
+    </div>
+    <%= partial "partials/footer" %>
   </body>
 </html>
