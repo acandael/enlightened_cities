@@ -20,6 +20,7 @@ html, body {
 
   @include media($large-screen) {
     height: 4em;
+    clear: both;
   }
 }
 

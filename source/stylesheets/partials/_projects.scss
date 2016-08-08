@@ -10,13 +10,22 @@ div.projects, div.project {
 }
 
 div.project {
+  aside {
+    float: right;
+    margin-top: 5.063em;
+  }
   .content {
     @include span-columns(8);
     ul {
       list-style-type: disc;
       list-style-position: inside;
       li {
-        margin-bottom: 2.25em;
+        margin-bottom: 1.5em;
+      }
+      &.output {
+        li {
+          margin-bottom: 2.25em;
+        }
       }
     }
   }
