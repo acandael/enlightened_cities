@@ -15,6 +15,7 @@
 .content {
   margin-top: 3.375em;
   section {
+    margin-bottom: 3.375em;
     @include span-columns(4 of 12);
     h2 {
       text-align: center;
