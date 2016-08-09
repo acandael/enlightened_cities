@@ -1,14 +1,21 @@
 div.projects, div.project {
   margin-bottom: 3.365em;
+  @include span-columns(12);
 }
 
 div.project {
   aside {
+    @include span-columns(4 of 12);
+    @include omega;
     float: right;
-    margin-top: 5.063em;
+    margin-top: 7.594em;
+    img {
+      margin-bottom: 2.25em;
+    }
   }
   .content {
-    @include span-columns(8);
+    @include span-columns(8 of 12);
+    padding-right: 3.375em;
     ul {
       list-style-type: disc;
       list-style-position: inside;
