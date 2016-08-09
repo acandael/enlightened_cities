@@ -3,7 +3,7 @@
   $medium-screen: 30em !default;
   height: 75px;
   padding-top: 1em;
-  border-bottom: 2px solid lighten($medium-gray, 30);
+  border-bottom: 2px solid $light-gray;
 
   // Mobile view
   .navigation-menu-button {
