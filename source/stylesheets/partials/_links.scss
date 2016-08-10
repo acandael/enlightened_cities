@@ -1,0 +1,18 @@
+div.linkspage {
+  @include span-columns(8);
+}
+
+div.sub {
+  margin-bottom: 3.375em;
+}
+ul.links {
+  list-style-type: disc;
+  li {
+    margin-bottom: 1.5em;
+  }
+  a {
+    border-bottom: 3px solid $medium-gray;
+    border-color: lighten($medium-gray, 30);
+  }
+
+}
