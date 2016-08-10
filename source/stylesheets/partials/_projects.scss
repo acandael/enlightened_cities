@@ -4,17 +4,17 @@ div.projects, div.project {
 }
 
 div.project {
-  // aside {
-  //   @include span-columns(4 of 12);
-  //   @include omega;
-  //   float: right;
-  //   margin-top: 7.594em;
-  //   img {
-  //     margin-bottom: 2.25em;
-  //   }
-  // }
+  aside {
+    @include span-columns(4 of 12);
+    @include omega;
+    float: right;
+    margin-top: 7.594em;
+    img {
+      margin-bottom: 2.25em;
+    }
+  }
   .content {
-    @include span-columns(12 of 12);
+    @include span-columns(8 of 12);
     padding-right: 3.375em;
     ul {
       list-style-type: disc;

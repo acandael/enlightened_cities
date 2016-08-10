@@ -28,7 +28,7 @@
     font-family: $heading-font-family;
     font-size: 1.5em;
     font-weight: 700;
-    color: $medium-gray;
+    color: $action-color;
 
     @include media ($medium-screen) {
       float: none;
