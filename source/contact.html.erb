@@ -1,0 +1,33 @@
+---
+title: Contact
+---
+
+<div class="contact">
+  <header class="pageheader">
+    <h1>Contact</h1>
+  <aside>
+    <%= image_tag "palace.jpg" %>
+  </aside>
+  <div class="contactform">
+    <form action="https://formspree.io/daniel.biltereyst@ugent.be>" method="POST">
+      <fieldset>
+        <p>Send us your message, and we respond asap!</p><br>
+        <div class="field">
+          <label for="name">Your Name: </label>
+          <input type="text" name="name" id="name" required autofocus />
+        </div>
+        <div class="field">
+          <label for="mail">Your Email: </label>
+          <input type="email" name="mail" id="mail" required />
+        </div>
+        <div class="field">
+          <label for="msg">Your Message: </label>
+          <textarea name="msg" id="msg"></textarea>
+        </div>
+        <div class="button">
+          <button>Send</button>
+        </div>
+      </fieldset>
+    </form>
+  </div><!-- end contactform -->
+</div><!!-- end contact div -->

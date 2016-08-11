@@ -1,0 +1,11 @@
+div.contact {
+  aside {
+    @include span-columns(6);
+    float: right;
+  }
+
+  .contactform {
+    @include span-columns(6);
+    padding-right: 3.375em;
+  }
+}
