@@ -1,0 +1,11 @@
+div.about {
+  aside {
+    @include span-columns(6);
+    float: right;
+  }
+  .content {
+    @include span-columns(6);
+    float: left;
+    padding-right: 3.375em;
+  }
+}
