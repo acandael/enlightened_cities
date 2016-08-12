@@ -1,6 +1,16 @@
 div.linkspage {
-  @include span-columns(8);
+  @include span-columns(12);
+  .content {
+    @include span-columns(8 of 12);
+    float: left;
+    margin-right: 3.375em;
+  } 
+  aside {
+    @include span-columns(4 of 12);
+    float: right;
+  }
 }
+
 
 div.sub {
   margin-bottom: 3.375em;
