@@ -10,14 +10,13 @@ html, body {
 }
 
 .wrapper-for-content-outside-of-footer:after {
-  // content: "";
+  content: "";
   display: block;
 }
 
 .footer, .wrapper-for-content-outside-of-footer:after {
   $large-screen: 50em !default;
   height: 12em;
-  border-top: 2px solid $light-gray;
 
   @include media($large-screen) {
     height: 4em;
@@ -28,6 +27,7 @@ html, body {
 .footer {
   $large-screen: 50em !default;
   padding-top: 1em;
+  border-top: 2px solid $light-gray;
 
   .footer-logo {
     margin-bottom: 1em;
