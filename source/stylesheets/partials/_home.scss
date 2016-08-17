@@ -3,12 +3,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 475px;
+  @include media($desktop) {
+    height: 475px;
+  }
   @include media($mobile) {
+    height: 275px;
     padding-top: 2.25em;
   }
   @include media($desktop) {
+    @include clearfix;
     padding-top: 7.594em;
+    margin-bottom: 2.25em;
   }
   h1 {
     text-align: center;
