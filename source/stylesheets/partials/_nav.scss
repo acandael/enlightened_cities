@@ -48,6 +48,7 @@
 
   nav {
     float: none;
+    background: #ffffff;
 
     @include media ($medium-screen) {
       float: right;
