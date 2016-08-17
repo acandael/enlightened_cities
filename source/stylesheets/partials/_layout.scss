@@ -32,10 +32,18 @@ i.fa {
 }
 
 header.pageheader {
-  margin-top: 3.375em;
+  @include media($mobile) {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  @include media($desktop) {
+    margin-top: 3.375em;
+  }
 }
 h1 {
-  font-size: 2.25em;
+  @include media($desktop) {
+    font-size: 2.25em;
+  }
 }
 
 figcaption {

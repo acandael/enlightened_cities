@@ -27,7 +27,9 @@
 }
 
 .content {
-  margin-top: 3.375em;
+  @include media($mobile) {
+    margin-top: 3.375em;
+  }
   section {
     @include media($desktop) {
       @include span-columns(4 of 12);
