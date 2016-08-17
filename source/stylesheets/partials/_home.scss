@@ -12,12 +12,16 @@
   }
   h1 {
     text-align: center;
-    font-size: 3.375em;
+    @include media($desktop) {
+      font-size: 3.375em;
+    }
     color: #ffffff;
   }
   p.tagline {
     color: #ffffff;
-    font-size: 1.3em;
+    @include media($desktop) {
+      font-size: 1.3em;
+    }
     text-align: center;
   }
 }
