@@ -34,7 +34,7 @@ i.fa {
 header.pageheader {
   @include media($mobile) {
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.25em;
   }
   @include media($desktop) {
     margin-top: 3.375em;

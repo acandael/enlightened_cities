@@ -28,7 +28,7 @@
 
 .content {
   @include media($mobile) {
-    margin-top: 3.375em;
+    margin-top: 2.25em;
   }
   section {
     @include media($desktop) {
