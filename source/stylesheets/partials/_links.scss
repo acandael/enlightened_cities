@@ -20,9 +20,8 @@ ul.links {
   li {
     margin-bottom: 1.5em;
   }
-  a {
-    border-bottom: 3px solid $action-color;
-    border-color: lighten($medium-gray, 30);
-  }
 
+  a {
+    text-decoration: underline;
+  }
 }
