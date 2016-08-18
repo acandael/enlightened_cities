@@ -1,11 +1,16 @@
 div.contact {
   aside {
-    @include span-columns(6);
-    float: right;
+    @include media($desktop) {
+      @include span-columns(6);
+      float: right;
+    }
+    margin-bottom: 2.25em;
   }
 
   .contactform {
-    @include span-columns(6);
-    padding-right: 3.375em;
+    @include media($desktop) {
+      @include span-columns(6);
+      padding-right: 3.375em;
+    }
   }
 }
