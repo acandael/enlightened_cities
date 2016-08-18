@@ -2,7 +2,7 @@
   background-image: url("../images/volkshuis.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  @include fill-parent;
   @include media($desktop) {
     height: 475px;
   }
@@ -51,6 +51,10 @@
 
 section.events {
   li {
-    line-height: 2.25em;
+    margin-bottom: 2.25em;
+    a {
+      text-decoration: underline;
+    }
   }
+
 }
