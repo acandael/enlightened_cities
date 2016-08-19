@@ -12,13 +12,15 @@ ul.countries {
 
 div.projects {
   aside {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(5);
       float: right;
     }
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
   }
   div.content {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(7);
       margin-top: 2.25em;
       padding-right: 2.25em;
@@ -26,23 +28,3 @@ div.projects {
   }
 }
 
-div.project_country {
-
-  margin-bottom: 3.375em;
-  li {
-    @include media($mobile) {
-      margin-bottom: 2.25em;
-    }
-    @include media($desktop) {
-      margin-bottom: 1.5em;
-    }
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  aside {
-    float: right;
-  }
-}

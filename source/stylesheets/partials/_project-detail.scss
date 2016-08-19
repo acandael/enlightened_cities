@@ -1,0 +1,26 @@
+div.project_country {
+
+  margin-bottom: 3.375em;
+  li {
+    @include media($mobile) {
+      margin-bottom: 2.25em;
+    }
+    @include media($large-screen) {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+}
+
+div.project {
+  aside {
+    margin-top: 2.25em;
+    @include media($large-screen) {
+    float: right;
+    }
+  }
+}
