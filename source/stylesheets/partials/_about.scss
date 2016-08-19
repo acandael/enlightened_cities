@@ -1,12 +1,13 @@
 div.about {
   aside {
-    @include media($desktop) {
+    margin-bottom : 2.25em;
+    @include media($large-screen) {
       @include span-columns(6);
       float: right;
     }
   }
   .content {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(6);
       float: left;
       padding-right: 3.375em;
