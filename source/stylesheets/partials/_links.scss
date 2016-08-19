@@ -1,13 +1,19 @@
 div.linkspage {
-  @include span-columns(12);
+  @include media($desktop) {
+    @include span-columns(12);
+  }
   .content {
-    @include span-columns(6 of 12);
-    float: left;
-    padding-right: 3.375em;
+    @include media($desktop) {
+      @include span-columns(6 of 12);
+      float: left;
+      padding-right: 3.375em;
+    }
   } 
   aside {
-    @include span-columns(6 of 12);
-    float: right;
+    @include media($desktop) {
+      @include span-columns(6 of 12);
+      float: right;
+    }
   }
 }
 
