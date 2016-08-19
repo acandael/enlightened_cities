@@ -4,6 +4,10 @@ div.about {
     @include media($large-screen) {
       @include span-columns(6);
       float: right;
+
+      img {
+        @include fill-parent;
+      }
     }
   }
   .content {

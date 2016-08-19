@@ -1,0 +1,19 @@
+div.research {
+  div.content {
+    @include media($large-screen) {
+      @include span-columns(6);
+    }
+  }
+  aside {
+    margin-top: 2.25em;
+    @include media($large-screen) {
+      @include span-columns(6);
+      @include omega;
+      float: right;
+    }
+    figure {
+      @include fill-parent;
+      margin-bottom: 2.25em;
+    }
+  }
+}

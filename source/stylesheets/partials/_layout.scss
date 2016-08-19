@@ -100,9 +100,9 @@ div.project, div.research {
       @include span-columns(4 of 12);
       @include omega;
       float: right;
-      margin-top: 7.594em;
     }
     figure {
+      @include fill-parent;
       margin-bottom: 2.25em;
     }
   }
