@@ -1,6 +1,6 @@
 div.contact {
   aside {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(6);
       float: right;
     }
@@ -8,7 +8,7 @@ div.contact {
   }
 
   .contactform {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(6);
       padding-right: 3.375em;
     }
