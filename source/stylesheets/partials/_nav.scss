@@ -12,7 +12,7 @@
     margin: 0;
     padding-top: 0.5em;
 
-    @include media ($large-screen) {
+    @include media ($medium-screen) {
       display: none;
     }
   }
@@ -35,10 +35,11 @@
     font-weight: 700;
     color: $action-color;
 
-    @include media ($large-screen) {
+    @include media ($medium-screen) {
       float: none;
-      text-align: center;
-      display: block;
+      font-size: 1.5em;
+      // text-align: center;
+      display: inline-block;
     }
 
     @include media ($large-screen) {
@@ -55,7 +56,7 @@
     float: none;
     background: #ffffff;
 
-    @include media ($large-screen) {
+    @include media ($medium-screen) {
       float: right;
       text-align: center;
       line-height: 1.5em;
@@ -71,9 +72,10 @@
     padding: 0;
     width: 100%;
 
-    @include media ($large-screen) {
+    @include media ($medium-screen) {
       display: block;
       margin: 0;
+      margin-left: 0;
       padding: 0;
     }
 
@@ -92,11 +94,18 @@
       line-height: 2.25em;
     }
 
-    @include media ($large-screen) {
+    @include media ($medium-screen) {
+      font-size: .8em;
+      margin-left: .8em;
       background: transparent;
       display: inline;
       text-decoration: none;
       width: auto;
+    }
+
+    @include media($large-screen) {
+      font-size: inherit;
+      margin-left: 0;
     }
   }
 
