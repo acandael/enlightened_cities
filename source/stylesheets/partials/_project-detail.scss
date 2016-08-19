@@ -22,5 +22,9 @@ div.project {
     @include media($large-screen) {
     float: right;
     }
+    
+    figure {
+      @include fill-parent;
+    }
   }
 }
