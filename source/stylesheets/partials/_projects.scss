@@ -1,16 +1,7 @@
-div.projects, div.project {
-  margin-bottom: 3.365em;
-  @include span-columns(12);
-}
-
-ul.countries {
-  li {
-    display: inline;
-    margin-right: 1em;
-  }
-}
 
 div.projects {
+  margin-bottom: 3.365em;
+  @include span-columns(12);
   aside {
     @include media($large-screen) {
       @include span-columns(5);
@@ -18,6 +9,13 @@ div.projects {
     }
     margin-top: 2.25em;
     margin-bottom: 2.25em;
+
+    ul.countries {
+      li {
+        display: inline;
+        margin-right: 1em;
+      }
+    }
   }
   div.content {
     @include media($large-screen) {
@@ -25,6 +23,11 @@ div.projects {
       margin-top: 2.25em;
       padding-right: 2.25em;
     }
+
+    li {
+      margin-bottom: 1em;
+    }
+
   }
 }
 
