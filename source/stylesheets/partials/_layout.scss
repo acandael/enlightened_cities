@@ -56,7 +56,7 @@ figcaption {
 }
 
 div.project .content, div.research .content {
-  @include media($desktop) {
+  @include media($large-screen) {
     @include span-columns(8 of 12);
     padding-right: 3.375em;
   }
@@ -95,7 +95,7 @@ div.project .content, div.research .content {
 
 div.project, div.research {
   aside {
-    @include media($desktop) {
+    @include media($large-screen) {
       @include span-columns(4 of 12);
       @include omega;
       float: right;
