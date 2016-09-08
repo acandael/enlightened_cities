@@ -3,6 +3,7 @@ div.about {
     margin-bottom : 2.25em;
     @include media($large-screen) {
       @include span-columns(6);
+      @include omega;
       float: right;
 
       img {
@@ -15,6 +16,9 @@ div.about {
       @include span-columns(6);
       float: left;
       padding-right: 3.375em;
+    }
+    a {
+      text-decoration: underline;
     }
   }
 }
