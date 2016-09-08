@@ -2,6 +2,14 @@
 div.projects {
   margin-bottom: 3.365em;
   @include span-columns(12);
+
+  ul.countries {
+    li {
+      display: inline;
+      margin-right: 1em;
+    }
+  }
+
   aside {
     @include media($large-screen) {
       @include span-columns(5);
@@ -10,12 +18,6 @@ div.projects {
     margin-top: 2.25em;
     margin-bottom: 2.25em;
 
-    ul.countries {
-      li {
-        display: inline;
-        margin-right: 1em;
-      }
-    }
   }
   div.content {
     @include media($large-screen) {
