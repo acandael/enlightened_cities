@@ -13,8 +13,13 @@ body {
 }
 
 p {
-  color: lighten($medium-gray, 20);
+  color: lighten($medium-gray, 10);
   margin-bottom: 1.5em;
+}
+
+strong {
+  font-weight: bold;
+  color: black;
 }
 
 
