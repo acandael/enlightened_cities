@@ -60,7 +60,7 @@ figcaption {
   font-size: $base-font-size * 0.9;
 }
 
-div.project .content, div.research .content {
+div.project .content, div.research .content, div.events .content {
   @include media($large-screen) {
     @include span-columns(8 of 12);
     padding-right: 3.375em;
