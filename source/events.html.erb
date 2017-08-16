@@ -12,9 +12,9 @@ description: ""
   </aside>
   <div class="content">
     <div class="project_country">
-    <ul>
-      <li>Publications: Special issue of <a href="http://journals.sagepub.com/doi/full/10.1177/1750698016670783">Memory Studies on cinema-going and memory</a>, edited by Annette Kuhn, Daniel Biltereyst and Philippe Meers, with an introduction by the editors and with articles on cinema-going in various cities, including an article by José Carlos Lozano on ‘Cinemagoing and memories of films in Laredo, Texas’.</li>
-    </ul>
+      <% data.events.each do |event| %>
+        <%= partial "event", locals: { event: event } %>
+      <% end %>
     </div>
   </div>
 </div>

@@ -22,10 +22,15 @@ description: "A collaborative network of research on film exhibition, programmin
     </section><!-- end maps -->
     <section class="events">
       <h2>Events</h2>
-      <ul>
-        <li>Symposium: European Performing Arts Dataverse, Amsterdam, 9 November 2017, organized by CREATE, see <a href="http://www.create.humanities.uva.nl/events/epad-symposium/">here</a></li>
-        <li>Call for papers for the panel ‘Cinema in/and the City: Cinema as Space and Social Experience in Europe (1895-2018)’, organized by Thunnis Van Oort and Åsa Jernudd, at the EAUH Conference 2018, see <a href="https://eauh2018.ccmgs.it/users/index.php?pagename=cms&name=sessiontracks&trackname=cinema-in-and-the-city--cinema-as-space-and-social-experience-in-europe">here</a></li>
-      </ul>
+        <% if data.events %>
+          <% data.events.take(2).each do |event| %>
+            <p class="event">- <span class="date"><%= event["date"] %>. </span><%= event["description"] %><br>
+            <% if event["link"].present? %>
+              <a href="<%= event['link'] %>">link</a>
+            <% end %>
+            </p>
+          <% end %>
+        <% end %>
       <p class="more"><a href="/events.html">More</a></p>
     </section><!-- end events -->
   </div><!-- end content -->
