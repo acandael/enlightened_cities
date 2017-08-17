@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.chase.ugent.be/sitemap.xml
+Sitemap: http://www.cinemacitycultures.com/sitemap.xml

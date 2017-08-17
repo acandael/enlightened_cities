@@ -1,4 +1,4 @@
-<p><span class="date"><%= event["date"] %></span> - <%= event["description"] %><br>
+<p>- <span class="date"><%= event["date"] %></span>. <%= event["description"] %><br>
 <% if event["link"].present? %>
   <a href="<%= event['link'] %>"><i class="fa fa-link"></i> link</a>
 <% end %>
