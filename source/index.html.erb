@@ -24,9 +24,9 @@ description: "A collaborative network of research on film exhibition, programmin
       <h2>Events</h2>
         <% if data.events %>
           <% data.events.take(2).each do |event| %>
-            <p class="event">- <span class="date"><%= event["date"] %>. </span><%= event["description"] %><br>
+            <p class="event"><strong><%= event["title"] %></strong> <%= event["description"] %>
             <% if event["link"].present? %>
-              <a href="<%= event['link'] %>">link</a>
+              <a href="<%= event['link'] %>">More information</a>
             <% end %>
             </p>
           <% end %>
