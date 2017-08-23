@@ -3,7 +3,7 @@
   $medium-screen: 30em !default;
   height: 75px;
   padding-top: 1em;
-  border-bottom: 2px solid #ed1c24;
+  border-bottom: 2px solid $light-gray;
 
   // Mobile view
   .navigation-menu-button {
